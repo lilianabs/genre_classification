@@ -1,0 +1,27 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-04-26T20:57:17.164875",
+    "startedAt": "2022-04-26T20:57:16.370209",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--model_export",
+        "model_export:latest",
+        "--test_data",
+        "data_test.csv:latest"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "starter/evaluate/run.py",
+    "git": {
+        "remote": "https://github.com/lilianabs/genre_classification.git",
+        "commit": "d7841e035cb9e0e4f10e88b9a5d3459fcfe7836b"
+    },
+    "email": "lilianabsmath@gmail.com",
+    "root": "/Users/lilianabadillo/Projects/udacity_nanodegree/genre_classification",
+    "host": "Lilianas-MacBook-Pro.local",
+    "username": "lilianabadillo",
+    "executable": "/Users/lilianabadillo/opt/anaconda3/envs/mlflow-0709ab7129137a09a369a9703b4bf6499d76253d/bin/python"
+}
