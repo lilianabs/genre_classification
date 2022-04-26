@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/lilianabadillo/Projects/udacity_nanodegree/genre_classification/starter/mlruns/0/dbf6c4f0bb7f4397ae4de7c44e0fe79a/artifacts
+end_time: 1651006265121
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: dbf6c4f0bb7f4397ae4de7c44e0fe79a
+run_uuid: dbf6c4f0bb7f4397ae4de7c44e0fe79a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1651006188591
+status: 3
+tags: []
+user_id: lilianabadillo

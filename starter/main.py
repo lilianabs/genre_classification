@@ -20,8 +20,8 @@ def go(config: DictConfig):
         # This was passed on the command line as a comma-separated list of steps
         steps_to_execute = config["main"]["execute_steps"].split(",")
     else:
-        assert isinstance(config["main"]["execute_steps"], list)
-        steps_to_execute = config["main"]["execute_steps"]
+
+        steps_to_execute = list(config["main"]["execute_steps"])
 
     # Download step
     if "download" in steps_to_execute:
@@ -38,7 +38,6 @@ def go(config: DictConfig):
         )
 
     if "preprocess" in steps_to_execute:
-
         _ = mlflow.run(
             os.path.join(root_path, "preprocess"),
             "main",
@@ -51,7 +50,6 @@ def go(config: DictConfig):
         )
 
     if "check_data" in steps_to_execute:
-
         _ = mlflow.run(
             os.path.join(root_path, "check_data"),
             "main",
@@ -77,7 +75,6 @@ def go(config: DictConfig):
         )
 
     if "random_forest" in steps_to_execute:
-
         # Serialize decision tree configuration
         model_config = os.path.abspath("random_forest_config.yml")
 
